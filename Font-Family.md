@@ -9,14 +9,20 @@
 
 ### Sans Serif Modernos:
 > font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+
 > font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans",sans-serif;
+
 > font-family: Tahoma, Geneva, 'Ubuntu', sans-serif;
+
 > font-family: 'Helvetica Condensed', ‘Arial Narrow’, 'Ubuntu Condensed', sans-serif;
 
 ### Sans Serif para Chamadas:
 > font-family: ‘Arial Black’, Gadget, sans-serif;
+
 > font-family: Impact, Charcoal, sans-serif;
+
 > font-family: Century Gothic, sans-serif;
+
 > font-family: Copperplate / Copperplate Gothic Light, sans-serif;
 
 ## Serifado (Serif)
@@ -28,6 +34,7 @@
 
 ### Serif Moderno
 > font-family: Georgia, "URW Bookman L", serif;
+
 > font-family: Palatino, "Palatino Linotype", "URW Palladio L", serif;
 
 ## Monoespaçado (Monospaced)
