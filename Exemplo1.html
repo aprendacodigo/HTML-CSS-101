@@ -11,6 +11,7 @@
 
 		.destaque {
 			text-align: center;
+			width: auto;
 		}		
 
 		h1, h3 {
@@ -24,29 +25,26 @@
 			display: inline-block;
 			vertical-align: top;			
 			width: 250px;
-			height: 300px;			
 			margin: 20px;			
 			background-color: lightgrey;
 			padding: 10px 20px;
 		}
 
+		.caixa > * {
+			text-align: left;
+		}		
+
 		li {
 			margin-bottom: 10px;
 			line-height: 1.3;
-			text-align: left;
+
 		}
 
 	</style>
 	<body>
-		<!-- 	
-				Neste exemplo, nossas caixas de informação estão alinhadas usando
-				o "display: inline-block"
-		-->		
 		<h1 class="destaque">Olá, Mundo!</h1>
-		<p class="destaque">                 Este é o resumo das quatro
- primeiras aulas:</p>
+		<p class="destaque">Este é o resumo das quatro primeiras aulas:</p>
 		<div class="caixa">		
-			
 			<h3>HTML e CSS são linguagens de conteúdo</h3>
 			<ul>		
 				<li>HTML define os elementos e o conteúdo da página</li>
