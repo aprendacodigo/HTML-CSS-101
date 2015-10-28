@@ -6,7 +6,6 @@
 	<style>
 		body {
 			font-family: Helvetica, Arial, sans-serif;
-			text-align: center;
 		}
 
 		.destaque {
@@ -22,17 +21,11 @@
 		}
 
 		.caixa {
-			display: inline-block;
-			vertical-align: top;			
 			width: 250px;
 			margin: 20px;			
-			background-color: lightgrey;
+			background-color: white;
 			padding: 10px 20px;
 		}
-
-		.caixa > * {
-			text-align: left;
-		}		
 
 		li {
 			margin-bottom: 10px;
@@ -40,33 +33,44 @@
 
 		}
 
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			justify-content: center;
+			background-color: lightgrey;
+		}
+
 	</style>
 	<body>
 		<h1 class="destaque">Olá, Mundo!</h1>
 		<p class="destaque">Este é o resumo das quatro primeiras aulas:</p>
-		<div class="caixa">		
-			<h3>HTML e CSS são linguagens de conteúdo</h3>
-			<ul>		
-				<li>HTML define os elementos e o conteúdo da página</li>
-				<li>CSS define a formatação desses elementos</li>
-				<li>A linguagem de programação do navegador é o <b>Javascript</b></li>
-			</ul>
-		</div>
-		<div class="caixa">
-			<h3>O HTML trabalha com elementos</h3>
-			<ul>		
-				<li>Cada elemento possui tags</li>
-				<li>Entre as tags nós colocamos o conteúdo</li>
-				<li>Para alterar o elemento nós usamos atributos</li>
-			</ul>
-		</div>
-		<div class="caixa">
-			<h3>O CSS formata os elementos</h3>
-			<ul>		
-				<li>O CSS tem seus próprios atributos</li>
-				<li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
-				<li>Um elemento pode ter uma ou mais classes CSS</li>
-			</ul>
+		<div class="container">		
+			<div class="caixa">		
+				<h3>HTML e CSS são linguagens de conteúdo</h3>
+				<ul>		
+					<li>HTML define os elementos e o conteúdo da página</li>
+					<li>CSS define a formatação desses elementos</li>
+					<li>A linguagem de programação do navegador é o <b>Javascript</b></li>
+				</ul>
+			</div>
+			<div class="caixa">
+				<h3>O HTML trabalha com elementos</h3>
+				<ul>		
+					<li>Cada elemento possui tags</li>
+					<li>Entre as tags nós colocamos o conteúdo</li>
+					<li>Para alterar o elemento nós usamos atributos</li>
+				</ul>
+			</div>
+			<div class="caixa">
+				<h3>O CSS formata os elementos</h3>
+				<ul>		
+					<li>O CSS tem seus próprios atributos</li>
+					<li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
+					<li>Um elemento pode ter uma ou mais classes CSS</li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
