@@ -18,14 +18,13 @@
 			color: #4682B4;	/* cor em hexadecimal */
 			color: rgb(70, 130, 180); /* cor em RGB */
 			color: rgba(70, 130, 180, 1); /* cor em RGBA */
-			color: #2980b9; /* cor final utilizada, porque está em cascata */
+			color: #c0392b; /* cor final utilizada, porque está em cascata */
 		}
 
 		.caixa {
-			display: inline-block;
-			vertical-align: top;			
 			width: 250px;
-			margin: 20px;			
+			height: 265px;
+			margin: 20px auto;			
 			background-color: white;
 			padding: 10px 20px;
 		}
@@ -36,13 +35,19 @@
 
 		}
 
-		.caixa > * {
-			text-align: left;
+		.container {
+			background-color: #c0392b;
+			overflow: auto;
 		}
 
-		.container {
-			background-color: #2980b9;
-			text-align: center;
+		.esquerda {
+			float: left;
+			margin-left: 10%;
+		}
+
+		.direita {
+			float: right;
+			margin-right: 10%;
 		}
 
 	</style>
@@ -50,12 +55,20 @@
 		<h1 class="destaque">Olá, Mundo!</h1>
 		<p class="destaque">Este é o resumo das quatro primeiras aulas:</p>
 		<div class="container">		
-			<div class="caixa">		
+			<div class="caixa esquerda">		
 				<h3>HTML e CSS são linguagens de conteúdo</h3>
 				<ul>		
 					<li>HTML define os elementos e o conteúdo da página</li>
 					<li>CSS define a formatação desses elementos</li>
 					<li>A linguagem de programação do navegador é o <b>Javascript</b></li>
+				</ul>
+			</div>
+			<div class="caixa direita">
+				<h3>O CSS formata os elementos</h3>
+				<ul>		
+					<li>O CSS tem seus próprios atributos</li>
+					<li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
+					<li>Um elemento pode ter uma ou mais classes CSS</li>
 				</ul>
 			</div>
 			<div class="caixa">
@@ -66,21 +79,14 @@
 					<li>Para alterar o elemento nós usamos atributos</li>
 				</ul>
 			</div>
-			<div class="caixa">
-				<h3>O CSS formata os elementos</h3>
-				<ul>		
-					<li>O CSS tem seus próprios atributos</li>
-					<li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
-					<li>Um elemento pode ter uma ou mais classes CSS</li>
-				</ul>
-			</div>			
+			
 		</div>
 		<div class="destaque">
-			<br>			
-			<h1>Centralizado com "Display: Inline-Block"</h1>
-			<p>Todos os elementos se comportam como texto</p>			
-			<p>Não alinha a altura dos elementos automaticamente</p>
-			<p>Posiciona usando atributos de alinhamento de texto</p>
+			<br>
+			<h1>Centralizado com "Float"</h1>
+			<p>Não centraliza - posiciona a esquerda ou direita do elemento anterior</p>
+			<p>Os elementos saem do fluxo normal do documento</p>
+			<p>É preciso repensar o código para utilizá-lo corretamente</p>
 		</div>
 	</body>
 </html>

@@ -9,3 +9,7 @@
 * Flat UI Colors: https://flatuicolors.com/
 * Flat Colors: http://flatcolors.net/
 * Web Safe Colors: http://websafecolors.info/
+
+##Sobre "Display" e "Float":
+* Tudo sobre Floats: https://css-tricks.com/all-about-floats/
+* Guia completo do FlexBox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/

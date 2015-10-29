@@ -18,12 +18,10 @@
 			color: #4682B4;	/* cor em hexadecimal */
 			color: rgb(70, 130, 180); /* cor em RGB */
 			color: rgba(70, 130, 180, 1); /* cor em RGBA */
-			color: #2980b9; /* cor final utilizada, porque está em cascata */
+			color: #27ae60 /* cor final utilizada, porque está em cascata */
 		}
 
 		.caixa {
-			display: inline-block;
-			vertical-align: top;			
 			width: 250px;
 			margin: 20px;			
 			background-color: white;
@@ -36,13 +34,13 @@
 
 		}
 
-		.caixa > * {
-			text-align: left;
-		}
-
 		.container {
-			background-color: #2980b9;
-			text-align: center;
+			display: flex;
+			flex-direction: row; /* outras opções: column, row-reversed, column-reversed */	
+			flex-wrap: nowrap; /* outras opções: wrap, wrap-reverse */
+			align-items: stretch; /* outras opções: flex-start, flex-end, center, baseline */
+			justify-content: center; /* outras opções: flex-start, flex-end */	
+			background-color: #27ae60;
 		}
 
 	</style>
@@ -76,11 +74,11 @@
 			</div>			
 		</div>
 		<div class="destaque">
-			<br>			
-			<h1>Centralizado com "Display: Inline-Block"</h1>
-			<p>Todos os elementos se comportam como texto</p>			
-			<p>Não alinha a altura dos elementos automaticamente</p>
-			<p>Posiciona usando atributos de alinhamento de texto</p>
+			<br>
+			<h1>Centralizado com "Display: Flex"</h1>
+			<p>Alinha a altura dos elementos automaticamente</p>
+			<p>Posiciona usando atributos específicos</p>
+			<p>Não funciona em navegadores antigos</p>
 		</div>
 	</body>
 </html>
