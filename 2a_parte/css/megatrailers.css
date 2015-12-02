@@ -1,0 +1,22 @@
+/** Formatação Básica */
+body {
+	background-color: #2C3E50; /* Azul do Fundo */
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans",sans-serif;
+	color: #EAEEEF; /* Cinza claro do texto */
+	margin: 0px;
+}
+
+/** Formatação da Chamada Principal
+* Exemplo: https://youtu.be/4r0287tUEgk
+* background: url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
+*/
+.chamada {
+	background: url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
+	background-position: center center; /* Centraliza a imagem no centro da tela */
+	background-repeat: no-repeat; /* Não repete a imagem */
+	background-size: cover; /* Ocupa toda a tela, sem distorcer a imagem */
+	background-attachment: fixed; /* A imagem fica fixa ao dar o scroll na tela */
+	
+	height: 100vh; /* 100% do view height */
+}
+
