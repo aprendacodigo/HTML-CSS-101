@@ -6,17 +6,445 @@ body {
 	margin: 0px;
 }
 
+.font350 {
+	font-size: 3.5em !important;
+}
+
+.font300 {
+	font-size: 3em;
+}
+
+.font250 {
+	font-size: 2.5em !important;
+}
+
+.font200 {
+	font-size: 2em !important;
+}
+
+.font090 {
+	font-size: 0.9em;
+}
+
+.cinza {
+	color: #CBCCCD;
+}
+
+.horizontal > li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.horizontal {
+	margin: 0px;
+	padding: 0px;
+	color: dimgrey;
+}
+
+.ativo {
+	color: white;
+}
+
+.grande {
+	font-size: 180% !important;
+}
+
+.subtitulo {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.centro {
+	text-align: center;
+}
+
+.esquerda {
+	text-align: left;
+}
+
+.espaco_abaixo {
+	margin-bottom: 0.5em;
+}
+
+.espaco_acima {
+	margin-top: 0.5em;
+}
+
+
 /** Formatação da Chamada Principal
 * Exemplo: https://youtu.be/4r0287tUEgk
 * background: url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
 */
 .chamada {
-	background: url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(https://img.youtube.com/vi/4r0287tUEgk/maxresdefault.jpg);
 	background-position: center center; /* Centraliza a imagem no centro da tela */
 	background-repeat: no-repeat; /* Não repete a imagem */
 	background-size: cover; /* Ocupa toda a tela, sem distorcer a imagem */
 	background-attachment: fixed; /* A imagem fica fixa ao dar o scroll na tela */
 	
 	height: 100vh; /* 100% do view height */
+	width: 100vw; /* 100% do view width */
+	display: flex;
+	flex-direction: column;
+}
+
+.area_chamada {
+	margin: auto;
+	margin-bottom: 150px;
+	text-align: center;
+}
+
+h2 {
+	margin: 0px;
+}
+
+.titulo {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	line-height: 1.1em;
+	font-weight: 400;
+	text-shadow: 3px 3px 0px rgba(0,0,0,0.8); /* offset-x offset-y blur cor */
+}
+
+.parte_superior {
+	/* Banner de 728px na largura e 90px na altura */
+	width: 100vw;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;
+	
+
+}
+
+.banner_superior {
+	pointer-events: all;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 14px;
+
+}
+
+.logo_facebook {
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+.boas_vindas {
+	font-weight: bold;
+	font-size: 80%;
+	margin-right: 5px;
+	text-align: right;
+	width: 80px;
+}
+
+.logo > img {
+	width: 250px;
+}
+
+/** SEÇAO: MINIATURAS */
+
+.miniaturas {
+	margin-top: -125px;
+	padding: 0px 4%;
+}
+
+.figuras, .menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.figuras > figure, a figure {
+	margin: 5px;
+}
+
+.bloco {
+	width: 156px;
+	height: 231px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -235px;
+}
+
+.menu {
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.cartaz {
+	position: relative;
+	z-index: 1;
+	transition: all 0.5s linear;
+}
+
+.cartaz:hover {
+	opacity: 0.2;
+}
+
+/** SEÇÃO: POSTS
+	Primeira parte
+*/
+
+.posts {
+	margin: 50px 4% 0 4%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icone {
+	color: darkgrey;
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+
+.options {
+	margin-left: 15px;
+}
+
+.options > div {
+	font-size: 150% !important;
+	color: darkgrey;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.videos > article {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.youtube > iframe {
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+/** SEÇÃO: POSTS
+	Segunda Parte
+*/
+
+.lateral {
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pesquisa {
+	font-size: 105%;
+	padding: 10px;
+	border-width: 0px;
+	margin: 0px auto;
+}
+
+.pesquisa > input {
+	font-size: inherit;
+	padding: inherit;
+	border-width: inherit;
+	width: 290px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.pesquisa > button {
+	font-size: inherit;
+	padding: inherit;
+	border-width: inherit;
+	border-radius: 0px 6px 6px 0px;
+	margin-left: -4px;
+	background-color: #337ab7;
+	color: white;
+	width: 60px;
+}
+
+.pesquisa > button:hover {
+	cursor: pointer;
+}
+
+.banner_lateral {
+	margin: 40px auto;
+}
+
+th, td {
+	padding: 10px;
+}
+
+thead > tr:last-child, tbody > tr:last-child {
+	border-bottom: 1px solid darkgrey;
+}
+
+tbody > tr:nth-child(odd) {
+	background-color: #223140;
+}
+
+.continua {
+	border-collapse: collapse;
+}
+
+tbody > tr:hover {
+	background-color: darkgrey;
+}
+
+.rodape {
+	padding: 25px;
+	color: white;
+	font-size: 1.5em;
+}
+
+.rodape li {
+	margin-right: 20px;
+}
+
+.link {
+	color: inherit;
+	text-decoration: none;
+}
+
+li .link:hover  {
+	text-decoration: underline;
+}
+
+.link:hover {
+	color: white;
+}
+
+/* SEGUNDA PAGINA
+PRIMEIRA SEÇÃO */
+
+.player {
+	max-width: 100%;
+	display: flex;
+	position: fixed;
+	z-index: 0;
+}
+
+.player > iframe {
+	width: 100vw; /* view width */
+	height: 100vh;
+}
+
+/* SEGUNDA SEÇÃO */
+
+.movie_info {
+	max-width: 100%;
+	position: absolute;
+	z-index: 1;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+	pointer-events: none;
+	overflow: hidden;
+}
+
+/* 	Elementos de Controle
+	Os elementos são usados para posicionar os Elementos Pai
+*/
+
+.area_info {
+	display: flex;
+	margin: 37vh 2% 0px 2%;
+}
+
+.trailer_detalhe {
+	width: 100%;
+	height: 100%;
+}
+
+.corpo_artigo {
+	display: flex;
+}
+
+/* 	Elementos Pai
+	Os Elementos são usados para posicionar os
+	elementos visíveis da página
+
+/* 	Cartaz e Data de Lançamento */
+
+.cartaz_detalhe {
+	width: 156px;
+	margin: 7px;
+}
+
+.cartaz_detalhe > figure {
+	margin: 0px;
+}
+
+.star {
+	margin: 8px 0px;
+	text-align: center;
+}
+
+.star > li {
+	font-size: 1.4em !important;
+	margin: 0px 2px;
+}
+
+.data_lancamento {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.data_lancamento > i {
+	margin-right: 5px;
+}
+
+/* Título e Menu da Página */
+
+.titulo_detalhe {
+	height: 231px;
+	margin: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.titulo_detalhe li {
+	padding: 10px;
+}
+
+.linha {
+	border-bottom: 1px solid white;
+}
+
+.descricao {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	margin-bottom: 50px;
+}
+
+.descricao > p:first-child {
+	margin-top: 0px;
+}
+
+/* Corpo do Artigo */
+
+.texto_artigo {
+	width: 100%;
+	margin: 7px;
+	padding-right: 40px;
+}
+
+/* Barra Lateral do Artigo */
+
+.lateral_detalhe {
+	width: 300px;
+	margin: 7px;
+}
+
+.banner_lateral_detalhe {
+	margin-bottom: 30px;
+}
+
+footer {
+	margin-top: 30px;
 }
 

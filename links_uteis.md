@@ -13,3 +13,7 @@
 ##Sobre "Display" e "Float":
 * Tudo sobre Floats: https://css-tricks.com/all-about-floats/
 * Guia completo do FlexBox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+##Google Ad Sense
+* Tamanho dos Anúncios: https://support.google.com/adsense/answer/6002621?hl=pt-BR&authuser=2
+

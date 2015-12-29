@@ -10,11 +10,264 @@
 		<meta property='og:image' content='image/cinema.jpg'/>
 		<meta property='og:type' content='website' />
 		<meta property='og:site_name' content='MegaTrailers' />
+		<!-- Arquivos e Fontes -->
 		<link rel="stylesheet" href='css/megatrailers.css' >
 		<link rel="icone" href='image/clapperboard.png' >
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<!-- Chamada Principal -->
-		<section class="chamada"></section>
+		<section class="chamada">
+			<div class="parte_superior">
+				<div class="banner_superior">
+					<img src="image/banner_alto.jpeg" alt="banner superior">
+				</div>
+			</div>
+			<div class="logo">
+				<img src="image/logo.png" alt="logotipo do site">
+			</div>
+			<div class="logo_facebook">
+				<div class="boas_vindas">Login, Cadastre-se</div>
+				<img src="image/FB-f-Logo__blue_58.png" alt="Facebook Logo">
+			</div>
+			<header class="area_chamada">
+				<h2 class="titulo font300">Star Wars</h2>
+				<h2 class="titulo font250 cinza">O Despertar da Força</h2>
+			</header>
+		</section>
+		<!-- Seção de Miniaturas -->
+		<section class="miniaturas">
+			<div class="menu">
+				<ul class="horizontal titulo">
+					<li class="ativo">Mais Populares</li>
+					<li>Em Cartaz</li>
+					<li>Meus Favoritos</li>
+				</ul>
+				<ul class="horizontal titulo">
+					<li class="ativo"><i class="fa fa-film grande"></i></li>
+					<li><i class="fa fa-gamepad grande"></i></li>
+					<li><i class="fa fa-television grande"></i></li>
+				</ul>
+			</div>
+			<div class="figuras">
+				<a class="link" href="detalhe.html">
+					<figure>
+						<img class="cartaz" src="image/poster_warcraft.jpg" alt="Warcraft">
+						<figcaption class="subtitulo grande centro bloco">Warcraft</figcaption>
+					</figure>
+				</a>
+				<figure>
+					<img class="cartaz" src="image/poster_007.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">007 - Spectre</figcaption>
+				</figure>
+				<figure>
+					<img class="cartaz" src="image/poster_h8.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">The Hateful 8</figcaption>
+				</figure>
+				<figure>
+					<img class="cartaz" src="image/poster_13.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">13 Hours</figcaption>
+				</figure>
+				<figure>
+					<img class="cartaz" src="image/poster_lwf.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">London Has Fallen</figcaption>
+				</figure>
+				<figure>
+					<img class="cartaz" src="image/poster_alice.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">Alice throught the Looking Glass</figcaption>
+				</figure>
+				<figure>
+					<img class="cartaz" src="image/poster_dory.jpg" alt="Warcraft">
+					<figcaption class="subtitulo grande centro bloco">Finding Dory</figcaption>
+				</figure>
+			</div>
+		</section>
+		<!-- Seção de Posts -->
+		<section class="posts">
+			<!-- Primeira metade - os posts da pagina -->
+			<div class="videos">
+				<article>
+					<!-- Aside: Icone -->
+					<aside>
+						<i class="fa fa-film font350 icone"></i>
+					</aside>
+					<!-- Main: Video e Titulo do Video -->
+					<main class="youtube">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Dqvz8w-latE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<div class="subtitulo font200">Warcraft</div>
+					</main>
+					<!-- Aside: Opções -->
+					<aside class="options">
+					<div>
+						<a class="link" href="detalhe.html">
+							<i class="fa fa-info-circle"></i>
+						</a>
+					</div>
+					<div>
+						<i class="fa fa-heart-o"></i>
+					</div>
+					<div>
+						<i class="fa fa-share-alt"></i>
+					</div>
+					</aside>
+				</article>
+				<article>
+					<!-- Aside: Icone -->
+					<aside>
+						<i class="fa fa-television font350 icone"></i>
+					</aside>
+					<!-- Main: Video e Titulo do Video -->
+					<main class="youtube">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3qDf-8-rUo8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<div class="subtitulo font200">Jessica Jones</div>
+					</main>
+					<!-- Aside: Opções -->
+					<aside class="options">
+					<div>
+						<i class="fa fa-info-circle"></i>
+					</div>
+					<div>
+						<i class="fa fa-heart-o"></i>
+					</div>
+					<div>
+						<i class="fa fa-share-alt"></i>
+					</div>
+					</aside>
+				</article>
+				<article>
+					<!-- Aside: Icone -->
+					<aside>
+						<i class="fa fa-gamepad font350 icone"></i>
+					</aside>
+					<!-- Main: Video e Titulo do Video -->
+					<main class="youtube">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/A8zkBajnXwg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<div class="subtitulo font200">Star Wars Battlefront</div>
+					</main>
+					<!-- Aside: Opções -->
+					<aside class="options">
+					<div>
+						<i class="fa fa-info-circle"></i>
+					</div>
+					<div>
+						<i class="fa fa-heart-o"></i>
+					</div>
+					<div>
+						<i class="fa fa-share-alt"></i>
+					</div>
+					</aside>
+				</article>
+				<article>
+					<!-- Aside: Icone -->
+					<aside>
+						<i class="fa fa-film font350 icone"></i>
+					</aside>
+					<!-- Main: Video e Titulo do Video -->
+					<main class="youtube">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/FTuDqFIcTJE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<div class="subtitulo font200">Procurando Dory</div>
+					</main>
+					<!-- Aside: Opções -->
+					<aside class="options">
+					<div>
+						<i class="fa fa-info-circle"></i>
+					</div>
+					<div>
+						<i class="fa fa-heart-o"></i>
+					</div>
+					<div>
+						<i class="fa fa-share-alt"></i>
+					</div>
+					</aside>
+				</article>
+			</div>
+			<!-- Segunda Metade - Pesquisa, Propaganda e Ranking -->
+			<div class="lateral">
+				<!-- Formulário de Pesquisa -->
+				<form action="" method="submit" class="pesquisa">
+					<input type="search" placeholder="Busque seu filme, jogo ou programa de TV">
+					<button type="submit"><i class="fa fa-search fa-lg"></i></button>
+				</form>
+				<!-- Banner Lateral -->
+				<div class="banner_lateral">
+					<img src="image/ad_lateral.jpeg" alt="Banner Lateral">
+				</div>
+				<!-- Ranking dos Trailers -->
+				<table class="font090 continua">
+					<caption class="subtitulo font250 esquerda espaco_abaixo">Ranking</caption>
+					<thead>
+						<tr>
+							<th></th>
+							<th>Nome do Trailer</th>
+							<th>Views</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td>Warcraft</td>
+							<td>11.550</td>
+						</tr>
+						<tr>
+							<th>2</th>
+							<td>Star Wars Episódio 7</td>
+							<td>9.990</td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td>Jogos Vorazes: A Esperança Parte 2</td>
+							<td>5.100</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td>007 - Spectre</td>
+							<td>4.100</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td>Procurando Dory</td>
+							<td>3.900</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td>Jessica Jones</td>
+							<td>2.100</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td>Star Wars: Battlefront</td>
+							<td>2.500</td>
+						</tr>
+						<tr>
+							<th>8</th>
+							<td>Fallout 4</td>
+							<td>1.500</td>
+						</tr>
+						<tr>
+							<th>9</th>
+							<td>World of Warcraft: Legion Introduction Cinematic</td>
+							<td>1.455</td>
+						</tr>
+						<tr>
+							<th>10</th>
+							<td>The Flash - Second Season</td>
+							<td>1.100</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<footer>
+			<ul class="horizontal subtitulo font150 rodape">
+				<li><a class="link" href="#">Início</a></li>
+				<li><a class="link" target="_blank" href="http://www.aprendacodigo.com">Quem Somos</a></li>
+				<li>Termos</li>
+				<li>Contato</li>
+				<li>Ajuda</li>
+				<li>Copyright (c) 2016 AprendaCodigo.com</li>
+			</ul>
+		</footer>
 	</body>
 </html>
