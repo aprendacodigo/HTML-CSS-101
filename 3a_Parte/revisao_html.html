@@ -4,22 +4,65 @@
 		<meta charset="UTF-8">
 		<title>Document</title>
 		<meta property="og:site_name" content="site teste">
-		<base href="http://www.teste.com.br">
+		<!-- <base href="http://www.teste.com.br"> -->
 		<link rel="stylesheet" href="css/teste.css">
 	</head>
 	<style>
+		/*
+		 	CSS = Cascade Style Sheet ou
+			Folha de Estilo em Cascata
+		*/
+
+		/* seletor {
+			atributo: valor;
+		} */
+
+		body {
+			font-family: "Courier New", Courier, monospace;
+		}
+
+		.vermelha, #id1 {
+			color: red;
+		}
+
+		.inicio {
+			font-size: 5em;
+		}
+
+		h1 {
+			font-size: 8em;
+			font-family: initial; /* Usa o valor padrão do navegador */
+			margin: inherit; /* Herda do elemento pai o valor */
+			border: unset; /* Usa o valor inicial e herda ou mantém o valor */
+		}
+
+		header > :not(h1) {
+			background-color: yellow;
+		}
+
+		p:first-letter {
+
+		}
+
+		:not(p) {
+			
+		};
 
 	</style>
 	<body>
+		<h1 class="inicio">Olá Mundo!</h1>
 		<section>
 			<header></header>
 			<article>
 				<header>
-					<h1>Titulo</h1>
-					<h6>Subtitulo</h6>
+					<h1 class="vermelha">Titulo</h1>
+					<h6 class="vermelha">Subtitulo</h6>
 				</header>
-				<main>Texto do Artigo</main>
-				<footer><menu></menu></footer>
+				<main id="id1">Texto do Artigo</main>
+				<footer>
+					<main>Main dentro do Footer</main>
+					<menu></menu>
+				</footer>
 				<aside>Tabelas, Mais info
 					<address></address>
 				</aside>

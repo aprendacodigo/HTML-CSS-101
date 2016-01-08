@@ -17,6 +17,9 @@
 ##Google Ad Sense
 * Tamanho dos Anúncios: https://support.google.com/adsense/answer/6002621?hl=pt-BR&authuser=2
 
+## Especificidade em CSS
+* Specifics on CSS Specificity: https://css-tricks.com/specifics-on-css-specificity/
+
 ##Sites para Referência de HMTL
 * HTML5 Doctor: http://html5doctor.com/
 * Mozilla Developer Network (MDN): https://developer.mozilla.org/pt-BR/
@@ -27,8 +30,10 @@
 * Stack Overflow: http://pt.stackoverflow.com/
 
 ##Sites para Referência de CSS
-* CSS-Tricks: https://css-tricks.com/
+* Seletores CSS: http://www.w3schools.com/cssref/css_selectors.asp
 * Mozilla Developer Network (MDN): https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Reference
+* CSS-Tricks: https://css-tricks.com/
 * Can I Use: http://caniuse.com/
-* W3 Schools: https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Reference
+
+
 
